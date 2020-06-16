@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import Sizes from '../Helpers/Sizes';
 
 const NowArtists = () => {
   return (
@@ -12,7 +13,6 @@ const NowArtists = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   }
