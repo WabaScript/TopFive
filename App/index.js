@@ -1,15 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Dimensions, TouchableOpacity } from 'react-native';
-
-const windowWidth = Dimensions.get('window').width;
+import UserLists from './Containers/UserLists'
+import Sizes from './Helpers/Sizes'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Whats up!</Text>
-      <TouchableOpacity style={styles.button}>
-        <Text> Click Me!</Text>
-      </TouchableOpacity>
+      <UserLists />
     </View>
   );
 }
@@ -23,7 +20,7 @@ const styles = StyleSheet.create({
   },
   button: {
     borderRadius: 30,
-    width: windowWidth / 8,
+    width: Sizes.maxWidth / 8,
     backgroundColor: "seagreen",
     alignItems: 'center',
     justifyContent: 'center',
