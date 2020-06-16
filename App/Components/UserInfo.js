@@ -6,13 +6,20 @@ import UserImage from './UserImage'
 const UserInfo = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.textContainer}>
-        <Text style={styles.listTitle}>TOP 5 ARTISTS RIGHT NOW</Text>
-        <Text style={styles.userName}>USER NAME</Text>
+
+      <View style={styles.listTitleContainer}>
+        <Text style={styles.listTitle}>ARTISTS RIGHT NOW</Text>
       </View>
+
+      <View style={styles.userNameContainer}>
+        <Text style={styles.userName}>@lou_minati</Text>
+        <Text style={styles.mood}>feeling all types of feels</Text>
+      </View>
+
       <View style={styles.imageContainer}>
-      <UserImage />
+        <UserImage />
       </View>
+
     </View>
   );
 }
@@ -24,21 +31,30 @@ const styles = StyleSheet.create({
     backgroundColor: '#222',
     alignItems: 'center',
     justifyContent: 'space-around',
+    paddingVertical: 34
   },
-  textContainer: {
+  listTitleContainer: {
     justifyContent: 'space-around',
-    
+  },
+  listTitle: {
+    letterSpacing: 0.7,
+    fontSize: 16,
+    color: '#ddd',
+  },
+  userNameContainer: {
+    alignItems: 'center',
+  },
+  userName: {
+    fontSize: 20,
+    color: '#e33',
+  },
+  mood: {
+    marginTop: 2,
+    color: '#eee'
   },
   imageContainer: {
     marginBottom: -Sizes.userInfoHeight * 0.435
-  
   },
-  listTitle: {
-    color: '#ddd',
-  },
-  userName: {
-    color: '#e33',
-  }
 });
 
 
