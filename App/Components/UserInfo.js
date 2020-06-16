@@ -6,6 +6,7 @@ const UserInfo = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>USER INFO</Text>
+      
     </View>
   );
 }
