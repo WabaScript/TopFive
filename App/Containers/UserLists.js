@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 import UserInfo from '../Components/UserInfo'
 import NowArtists from '../Components/NowArtists'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Dimensions, TouchableOpacity } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import UserLists from './Containers/UserLists'
 import Sizes from './Helpers/Sizes'
 
